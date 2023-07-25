@@ -86,6 +86,7 @@ footer {
 }
 
 main {
+    min-height: 42vh;
     padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
@@ -106,6 +107,12 @@ main {
     letter-spacing: 1px;
     word-spacing: 0.2rem;
     margin: 1rem;
+}
+
+.contact-styling {
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    word-spacing: 0.2rem;
 }
 
 .horizontal-container p {

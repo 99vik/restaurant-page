@@ -11,6 +11,9 @@ function showContactTab() {
     p1.textContent = "Call us or send us email at:"
     p2.textContent = "Phone: 012 234 123"
     p3.textContent = "Email: help@sushirest.com"
+    p1.setAttribute("class", "contact-styling");
+    p2.setAttribute("class", "contact-styling");
+    p3.setAttribute("class", "contact-styling");
 
     main.appendChild(h2);
     main.appendChild(p1);
