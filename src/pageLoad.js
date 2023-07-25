@@ -72,11 +72,39 @@ function loadElements() {
         let a = document.createElement("a");
         li.appendChild(a);
         a.setAttribute("id", text);
-        a.setAttribute("href", "#");
         text = text.charAt(0).toUpperCase() + text.slice(1);
         a.textContent = text;
         return li
     }
 
+    function showHomeTab() {
+        const main = document.querySelector("main");
+        main.innerHTML = "";
 
-export { loadElements };
+        const h2 = document.createElement("h2");
+        h2.textContent = "Welcome to sushi restaurant!";
+        main.appendChild(h2);
+
+        const div = newDiv();
+        div.setAttribute("class", "horizontal-container");
+        const img = new Image();
+        img.src = pic1;
+        div.appendChild(img);
+        const div2 = newDiv();
+        div2.setAttribute("class", "quote");
+        const q = document.createElement("q");
+        q.textContent = "Sushi is not just food; it's an art form, an experience.";
+        const p = document.createElement("p");
+        p.textContent = " - Francis Mallmann";
+        div2.appendChild(q);
+        div2.appendChild(p);
+        div.appendChild(div2);
+        const btn = document.createElement("button");
+        btn.textContent = "Book your experience";
+        btn.setAttribute("class", "book-btn");
+        main.appendChild(div);
+        main.appendChild(btn);
+    }
+
+
+export { loadElements, showHomeTab };
