@@ -1,1 +1,4 @@
-console.log("hello world");
+import { loadElements } from "./pageLoad";
+import './style.css';
+
+loadElements();
